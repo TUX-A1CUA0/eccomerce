@@ -1,6 +1,6 @@
 <?php
 // Include the Database class
-include 'Database.php'; // Ensure the path to Database.php is correct
+include "Database.php"; // Ensure the path to Database.php is correct
 
 // Create an instance of the Database class
 $database = new Database();
