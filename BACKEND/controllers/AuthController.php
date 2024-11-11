@@ -30,8 +30,8 @@ class AuthController {
     public function login() {
         $data = json_decode(file_get_contents("php://input"));
 
-        if(!empty($data->username) && !empty($data->password)) {
-            $this->user->username = $data->username;
+        if(!empty($data->email) && !empty($data->password)) {
+            $this->user->email = $data->email;
             $this->user->password = $data->password;
 
             $user = $this->user->login();
